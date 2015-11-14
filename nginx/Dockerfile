@@ -29,6 +29,6 @@ ADD supervisor.nginx.conf /etc/supervisor.d/nginx.conf
 
 COPY ./dist /usr/share/nginx/html
 
-# EXPOSE 80
+EXPOSE 80
 CMD /usr/bin/supervisord -n
 CMD ["nginx", "-g", "daemon off;"]
